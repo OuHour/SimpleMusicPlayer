@@ -93,7 +93,7 @@ public class MusicAdapter extends RecyclerView.Adapter<MusicAdapter.MyViewHolder
             }
         });
 
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
+        holder.menuMore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View view) {
                 PopupMenu popupMenu = new PopupMenu(mContext, view);
