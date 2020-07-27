@@ -2,6 +2,7 @@ package com.example.simplemusicplayer.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.MediaMetadataRetriever;
 import android.media.MediaPlayer;
 import android.net.Uri;
@@ -106,6 +107,10 @@ public class PlayerActivity extends AppCompatActivity implements MediaPlayer.OnC
                 }
             }
         });
+    }
+
+    public void onBack(View view) {
+        finish();
     }
 
     @Override

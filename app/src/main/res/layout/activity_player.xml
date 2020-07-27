@@ -9,14 +9,15 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:id="@+id/layout_top_btn"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp">
+        android:background="@color/colorPrimary">
 
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:id="@+id/back_btn"
+            android:onClick="onBack"
             android:src="@drawable/ic_back"
+            android:layout_marginLeft="5dp"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"/>
 
@@ -35,6 +36,7 @@
             android:layout_height="30dp"
             android:id="@+id/menu_btn"
             android:src="@drawable/ic_menu"
+            android:layout_marginRight="5dp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"/>
 

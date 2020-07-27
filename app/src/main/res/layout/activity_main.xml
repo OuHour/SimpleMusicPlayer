@@ -7,6 +7,14 @@
     android:orientation="vertical"
     tools:context=".activity.MainActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:background="@color/colorPrimary"
+        app:title="@string/app_name"
+        app:menu="@menu/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_layout"
         android:background="@color/colorPrimary"

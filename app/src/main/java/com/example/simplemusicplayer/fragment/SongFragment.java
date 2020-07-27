@@ -22,7 +22,7 @@ import static com.example.simplemusicplayer.activity.MainActivity.musicFiles;
 public class SongFragment extends Fragment {
 
     RecyclerView recyclerView;
-    MusicAdapter musicAdapter;
+    public static MusicAdapter musicAdapter;
 
     public SongFragment() {
         // Required empty public constructor

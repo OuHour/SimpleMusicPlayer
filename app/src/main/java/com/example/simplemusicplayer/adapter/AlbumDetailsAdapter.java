@@ -43,7 +43,9 @@ public class AlbumDetailsAdapter extends RecyclerView.Adapter<AlbumDetailsAdapte
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, final int position) {
-        holder.album_name.setText(albumFiles.get(position).getTitle());
+        holder.song_name.setText(albumFiles.get(position).getTitle());
+        holder.artist_name.setText(albumFiles.get(position).getArtist());
+        holder.album_name.setText(albumFiles.get(position).getAlbum());
         final byte[] image = getAlbumArt(albumFiles.get(position).getPath());
         if(image != null) {
             Glide.with(mContext).asBitmap().load(image).into(holder.album_image);
@@ -60,7 +62,6 @@ public class AlbumDetailsAdapter extends RecyclerView.Adapter<AlbumDetailsAdapte
                 mContext.startActivity(intent);
             }
         });
-
     }
 
     @Override
@@ -71,12 +72,14 @@ public class AlbumDetailsAdapter extends RecyclerView.Adapter<AlbumDetailsAdapte
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
         ImageView album_image;
-        TextView album_name;
+        TextView song_name, artist_name, album_name;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             album_image = itemView.findViewById(R.id.music_img);
-            album_name = itemView.findViewById(R.id.music_file_name);
+            song_name = itemView.findViewById(R.id.music_file_name);
+            artist_name = itemView.findViewById(R.id.music_album);
+            album_name = itemView.findViewById(R.id.music_artist);
         }
     }
 

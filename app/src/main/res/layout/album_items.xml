@@ -3,7 +3,7 @@
     android:layout_width="170dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/album_items"
-    app:cardCornerRadius="0dp"
+    app:cardCornerRadius="10dp"
     app:cardElevation="10dp"
     android:layout_margin="10dp"
     android:layout_height="210dp">
@@ -11,8 +11,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/relative_layout"
-        android:background="@color/colorPrimary">
+        android:id="@+id/relative_layout">
 
         <ImageView
             android:layout_width="match_parent"

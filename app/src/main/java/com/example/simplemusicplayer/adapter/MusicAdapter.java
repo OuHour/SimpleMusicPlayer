@@ -166,4 +166,10 @@ public class MusicAdapter extends RecyclerView.Adapter<MusicAdapter.MyViewHolder
         return art;
     }
 
+    public void updateList(ArrayList<MusicFiles> musicFilesArrayList) {
+        mFiles = new ArrayList<>();
+        mFiles.addAll(musicFilesArrayList);
+        notifyDataSetChanged();
+    }
+
 }
